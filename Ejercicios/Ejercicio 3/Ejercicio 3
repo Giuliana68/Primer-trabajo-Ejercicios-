@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    float valor_decimal;
+    printf("Ingrese la medicion decimal del sensor (ej. 18.9): ");
+    scanf("%f", &valor_decimal);
+
+    int valor_entero = (int)valor_decimal;
+    float perdida = valor_decimal - valor_entero;
+
+    printf("Valoe original (float): %.2f\n", valor_decimal);
+    printf("Valor convertido (int)   : %d\n", valor_entero);
+    printf("Perdida decimal    : %.2f\n", perdida);
+
+    return 0;
+}

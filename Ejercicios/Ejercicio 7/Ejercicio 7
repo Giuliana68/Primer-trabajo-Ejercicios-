@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int observaciones;
+    float porcentaje_completos;
+    printf("Ingrese numero de observaciones validas: ");
+    scanf("%d", &observaciones);
+    printf("Ingrese porcentaje de datos completos: ");
+    scanf("%f", &porcentaje_completos);
+    if (observaciones >= 100 && porcentaje_completos >= 70.0) {
+        printf("El conjunto de datos CUMPLE las condiciones minimas.\n");
+    } else {
+        printf("El conjunto de datos NO CUMPLE las condiciones minimas.\n");
+    }
+    return 0;
+}
